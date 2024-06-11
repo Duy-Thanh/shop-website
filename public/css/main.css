@@ -1,0 +1,289 @@
+#banner {
+    background: url(../images/banner.png);
+    width: 100%;
+    min-height: 550px;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 3px wheat;
+}
+/* ===== END BANNER ===== */
+#introduce {
+    margin-bottom: 80px;
+}
+#introduce .container ul.list-introduce{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+#introduce .container ul.list-introduce li {
+    width: 100%;
+    text-align: center;
+}
+#introduce .container ul.list-introduce li a {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 0px;
+    background: inherit;
+    color: #ffffff;
+    position: relative;
+    transition: all 0.5s;
+    box-shadow: 3px 3px 5px burlywood;
+    text-transform: uppercase;
+}
+#introduce .container ul.list-introduce li:first-child{
+    background-color: #c97278;
+}
+#introduce .container ul.list-introduce li:first-child:hover a {
+    background-color: #b4666c;
+}
+#introduce .container ul.list-introduce li:nth-child(2){
+    background-color: #c0ab90;
+}
+#introduce .container ul.list-introduce li:nth-child(2):hover a {
+    background-color: #ac9981;
+}
+#introduce .container ul.list-introduce li:last-child{
+    background: #7f8fa0;
+}
+#introduce .container ul.list-introduce li:last-child:hover a {
+    background-color: #728090;
+}
+#introduce .container ul.list-introduce li a span.icon i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 20px;
+    color: #ffffff;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+#introduce .container ul.list-introduce li:first-child a span.icon i {
+    background: #b4666c;
+}
+#introduce .container ul.list-introduce li:nth-child(2) a span.icon i {
+    background: #ac9981;
+}
+#introduce .container ul.list-introduce li:last-child a span.icon i {
+    background: #728090;
+}
+/* ===== END INTRODUCE ===== */
+#featured-product {
+    margin-bottom: 40px;
+}
+.item {
+    border: 1px solid #c9c9c9;
+    text-align: center;
+    box-shadow: 1px 0 2px wheat;
+    transition: all 0.2s ease-in-out;
+}
+.item:hover {
+    border: 1px solid yellowgreen;
+}
+.item a.pic-product {
+    overflow: hidden;
+}
+.item a.pic-product img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.2s ease-in-out;
+}
+.item:hover a.pic-product img {
+    transform: scale(1.1);
+}
+.item a.pic-product {
+    display: block;
+    border-bottom: 1px solid #c9c9c9;
+}
+.item a.name-product {
+    font-weight: 400;
+    color: #212121;
+    font-size: 18px;
+    display: block;
+    padding-top: 14px;
+    transition: all 0.2s ease-in-out;
+}
+.item:hover a.name-product {
+    color: #f1c40f;
+}
+.item a.name-product:hover {
+    transform: scale(1.2);
+}
+.item .price {
+    padding-block: 14px;
+}
+.item .price span.new-price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #b74851;
+}
+.item .price span.old-price {
+    font-weight: 400;
+    font-size: 18px;
+    color: #8d8d8d;
+    text-decoration: line-through;
+    padding-left: 5px;
+}
+.item a.add-cart {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #444444;
+    padding: 15px 45px;
+    background: #eeeeee;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    transition: all 0.5s;
+}
+.item a.add-cart:hover {
+    background: #7f8fa0;
+    color: yellow;
+    transform: scale(1.1);
+}
+#slide-top {
+    position: relative;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    position: absolute;
+    top: 50%;
+    border: none;
+    outline: none;
+    z-index: 5;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #c97278;
+    border-radius: 100rem;
+}
+.owl-carousel .owl-nav button i {
+    background-color: #e2868c;
+    padding: 20px 22px;
+    border-radius: 100rem;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+.owl-carousel .owl-nav button:hover i {
+    background: #c97278;
+    transform: scale(1.1);
+}
+.owl-carousel .owl-nav button:active i {
+    background-color: yellow;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+.owl-carousel .owl-nav button.owl-next {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+/* ===== END FEATURED-PRODUCT ===== */
+#autumn-spring-fashion .container {
+    text-align: center;
+}
+#autumn-spring-fashion ul.list-product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 15px;
+}
+/* ===== END AUTUMN-SPRING-FASHION ===== */
+#trend {
+    margin-bottom: 60px;
+}
+#list-post .item {
+    text-align: left;
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    padding: 3px;
+}
+#list-post .item a.post-thumb {
+    display: block;
+    overflow: hidden;
+}
+#list-post .item a.post-thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+}
+#list-post .item:hover a.post-thumb img {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+#list-post .item a.post-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    padding-block: 10px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+#list-post .item:hover a.post-title {
+    color: #35aec0;
+}
+#list-post .item p.post-desc {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+}
+button.owl-dot:focus {
+    border: none;
+    outline: none;
+}
+/* ===== END TREND ===== */
+#register {
+    background: url(../images/background-bottom.png);
+    background-size: 100% 100%;
+    min-height: 420px;
+}
+#register p:first-child {
+    font-weight: bold;
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 80px;
+}
+#register p:nth-child(even) {
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 55px;
+}
+#register form.enter-email {
+    width: 70%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    border: 3px solid #ffffff;
+}
+#register form.enter-email input {
+    padding: 20px 45px;
+    background: none;
+    outline: none;
+    color: #ffffff !important;
+    font-weight: 400;
+    font-size: 18px;
+}
+#register form.enter-email input::placeholder {
+    color: #ffffff;
+}
+#register form.enter-email button {
+    font-size: 21px;
+    font-weight: bold;
+    border: none;
+    padding: 20px;
+    background: #35aec0;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+#register form.enter-email button:hover {
+    background: #00a8ff;
+}
+/* ===== END REGISTER ===== */

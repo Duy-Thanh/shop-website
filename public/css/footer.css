@@ -1,0 +1,30 @@
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 95px;
+    padding-bottom: 90px;
+}
+footer .container {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 1fr 1.6fr;
+    column-gap: 70px;
+}
+.widget-body ul li {
+    list-style: disc;
+    list-style-position: inside;
+    padding-bottom: 5px;
+}
+.widget-body a {
+    color: #ffffff;
+}
+/* ===== END FOOTER ===== */
+#copy-right {
+    background: #ffffff;
+    text-align: center;
+    padding: 12px 0;
+}
+#copy-right p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #2f2f2f;
+}

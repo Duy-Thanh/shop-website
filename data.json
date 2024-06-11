@@ -1,0 +1,12 @@
+{
+    "users": [
+        {
+            "username": "admin123",
+            "password": "admin2024",
+            "fullName": "Administrator",
+            "cart": [
+                
+            ]
+        }
+    ]
+}

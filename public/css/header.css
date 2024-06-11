@@ -1,0 +1,97 @@
+header {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    transition: all 0.5s;
+}
+header.sticky {
+    background: gray;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    box-shadow: 2px 2px 3px whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.5s;
+    z-index: 3;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container a.logo-header img {
+    transition: all 0.3s;
+}
+header .container a.logo-header:hover img{
+    transform: scale(1.1);
+}
+header .container nav ul#main-menu>li {
+    display: inline-block;
+    position: relative;
+}
+header .container nav ul#main-menu li a {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    transition: all 0.5s;
+    padding: 4px 14px;
+}
+header .container nav ul#main-menu>li:hover>a {
+    transform: scale(1.1);
+}
+header .container nav ul#main-menu>li>a {
+    text-transform: uppercase;
+}
+ul.sub-menu {
+    position: absolute;
+}
+ul.sub-menu {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+ul.sub-menu li {
+    width: 145px;
+    display: block;
+    background-color: #808e9b;
+    box-shadow: 3px 3px 5px #ffcccc;
+    transition: all 0.3s ease-in-out;
+}
+ul.sub-menu li:hover {
+    background: #dfe6e9;
+}
+ul#main-menu li:hover>ul.sub-menu {
+    display: block;
+}
+form#search {
+    padding: 20px 10px 20px 0;
+}
+input#search-home {
+    padding: 3px 1px;
+    border-radius: 14px;
+    width: 28px;
+    outline: none;
+    background: url(../images/search.png) no-repeat 4px;
+    background-size: 17px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+.cart button {
+    position: relative;
+    background: none;
+    outline-style: none;
+    border: none;
+}
+.cart button i {
+    font-size: 35px;
+}
+.cart button span.num-cart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -70%);
+    color: #ffffff;
+    font-weight: bold;
+}
+/* ===== END HEADER ===== */

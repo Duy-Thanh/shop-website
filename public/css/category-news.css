@@ -1,0 +1,182 @@
+#wp-content .container {
+    display: grid;
+    grid-template-columns: 28fr 11fr;
+    column-gap: 50px;
+}
+#wp-content .container #content ul.list-post li {
+    display: grid;
+    grid-template-columns: 73fr 90fr;
+    column-gap: 22px;
+    margin-bottom: 40px;
+}
+#wp-content .container #content ul.list-post li a.post-thumb {
+    display: block;
+    overflow: hidden;
+}
+
+#wp-content .container #content ul.list-post li a.post-thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.2s ease-in-out;
+}
+#wp-content .container #content ul.list-post li:hover a.post-thumb img {
+    transform: scale(1.1);
+}
+#wp-content .container #content ul.list-post li a.post-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #333333;
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+#wp-content .container #content ul.list-post li:hover a.post-title {
+    color: #3498db;
+}
+#wp-content .container #content ul.list-post li p.time {
+    font-weight: 300;
+    font-size: 13px;
+    color: #a69e9e;
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+#wp-content .container #content ul.list-post li p.post-desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+    text-align: justify;
+}
+/* ===== END CONTENT ===== */
+#wp-content .container #sidebar .box {
+    margin-bottom: 50px;
+}
+#wp-content .container #sidebar .box .box-head {
+    margin-bottom: 0;
+}
+#wp-content .container #sidebar .box .box-head h3 {
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffffff;
+    display: block;
+    padding: 14px 0 15px 25px;
+    background: #283943;
+    text-align: left;
+}
+#wp-content .container #sidebar .top ul.list-category {
+    border: 1px solid #d4d4d4
+}
+#wp-content .container #sidebar .top ul.list-category li {
+    padding-inline: 20px;
+}
+#wp-content .container #sidebar .top ul.list-category li a {
+    display: flex;
+    padding-block: 17px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    border-bottom: 1px solid #d4d4d4;
+    transition: all 0.2s ease-in-out;
+}
+#wp-content .container #sidebar .top ul.list-category li:hover a {
+    color: #d5be00;
+    border-bottom: 1px solid #d5be00;
+}
+#wp-content .container #sidebar .top ul.list-category li:hover a span i {
+    display: block;
+}
+#wp-content .container #sidebar .top ul.list-category li a span i {
+    display: none;
+}
+a.ads {
+    display: block;
+    width: 100%;
+    margin-bottom: 45px;
+}
+a.ads img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+ul.list-product-sale {
+    border: 1px solid #d4d4d4;
+    padding-inline: 15px;
+}
+ul.list-product-sale li {
+    display: grid;
+    grid-template-columns: 1fr 2.46fr;
+    column-gap: 10px;
+    padding-block: 20px;
+    border-bottom: 1px solid #d0d0d0;
+}
+ul.list-product-sale li:last-child {
+    border: none;
+}
+ul.list-product-sale li a.pic-product {
+    display: block;
+    overflow: hidden;
+}
+ul.list-product-sale li a.pic-product img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.2s ease-in-out;
+}
+ul.list-product-sale li:hover a.pic-product img {
+    transform: scale(1.1);
+}
+ul.list-product-sale li .more-info {
+    position: relative;
+    overflow: hidden;
+}
+ul.list-product-sale li .more-info a.name-product {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    color: #272727;
+    text-align: justify;
+    transition: all 0.2s ease-in-out;
+}
+ul.list-product-sale li:hover .more-info a.name-product {
+    color: #3498db;
+}
+ul.list-product-sale li .more-info .price span.price-product {
+    font-weight: 500 !important;
+    font-size: 15px;
+    color: #d40707;
+    margin-right: 5px;
+}
+ul.list-product-sale li .more-info .price span.old-price {
+    font-weight: 500;
+    font-size: 12px;
+    color: #909090;
+    text-decoration: line-through;
+}
+ul.list-product-sale li .more-info a.detail {
+    font-size: 13px;
+    color: #77b3c2;
+    font-weight: 400;
+    text-decoration: underline !important;
+}
+
+ul.list-product-sale li .more-info a.buy-now {
+    position: absolute;
+    background: wheat;
+    bottom: 5px;
+    right: 0;   
+    transform: translateX(101%);
+    padding: 0 6px;
+    transition: all 0.5s;
+    color: #6c5ce7;
+}
+ul.list-product-sale li:hover .more-info a.buy-now {
+    transform: translateX(0);
+}
+ul.list-product-sale li .more-info a.buy-now:hover {
+    background-color: #77b3c2;
+    color: white;
+}
